@@ -20,11 +20,11 @@ public class Task_579 {
 		private HashMap<Integer, Integer> positiveSequence;
 		private int lengthSequence;
 		//-----------------------------------------------------------------------------constructors
-		/*public*/ Sequence(String path)
+		/*public*/ Sequence(final String path)
 		{
 			this.negativeSequence = new HashMap<>();
 			this.positiveSequence = new HashMap<>();
-			try(Scanner input = new Scanner(Paths.get(path))) {
+			try(final Scanner input = new Scanner(Paths.get(path))) {
 				//-----------------------------------------------------------------------------
 				if(input.hasNext()) {
 					//-----------------------------------------------------------------------------
@@ -56,7 +56,7 @@ public class Task_579 {
 		}
 		//-----------------------------------------------------------------------------
 		//-----------------------------------------------------------------------------methods
-		private int sumSequence(HashMap<Integer, Integer> current)
+		private int sumSequence(final HashMap<Integer, Integer> current)
 		{
 			int sum = 0;
 			for(Integer i : current.values()) {
